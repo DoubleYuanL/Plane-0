@@ -1,0 +1,17 @@
+1) 系统：ubuntu 14.04 64位版本
+2）安装apache和sqlie3
+   sudo apt-get install apache2 sqlite3
+3) 配置apache：
+   cd /etc/apache2/mods-enabled
+   sudo ln -s ../mods-available/cgid.conf
+   sudo ln -s ../mods-available/cgid.load
+   sudo ln -s ../mods-available/cgi.load
+4) 重启apache服务器
+   /etc/init.d/apache2 restart
+5) 拷贝我的代码cgi-bin到/usr/lib/cgi-bin
+   在cgi-bin目录下执行 sudo make
+6) 修改scoreHandle.c中db路径
+
+OK
+
+   
